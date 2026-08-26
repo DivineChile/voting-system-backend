@@ -19,7 +19,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: env.frontendUrl,
+    origin: env.frontendUrl || "https://voting-system-frontend.pxxlspace.cv",
     credentials: true,
   }),
 );
